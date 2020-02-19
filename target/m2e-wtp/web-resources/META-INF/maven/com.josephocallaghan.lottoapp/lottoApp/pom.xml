@@ -22,16 +22,17 @@
 		<display_version>${project.artifactId}-${project.version}</display_version>
 		<maven.build.timestamp.format>yyyy-MM-dd HH:mm</maven.build.timestamp.format>
 		<timestamp>${maven.build.timestamp}</timestamp>
+		
+		<war-file-name>lottoApp</war-file-name>
+		<war-output-Directory>${basedir}\Build_war</war-output-Directory>
+		<target-dir>${basedir}\target\${project.artifactId}-${project.version}</target-dir>
+		
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-mail</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
